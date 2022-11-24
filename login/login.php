@@ -1,6 +1,6 @@
 <?php
 
- 'init.php';
+ require_once '../login/init.php';
   
 
  $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -14,13 +14,13 @@
  }
   
 
- $passwordHash = make_hash($password);
+ $passwordHash = $password;
   
 
  $PDO = db_connect();
   
 
- $sql = "SELECT id, name FROM users WHERE email = :email AND password = :password";
+ $sql = "SELECT id, nome FROM usuario WHERE email = :email AND senha = :password AND ativo = '1'";
  $stmt = $PDO->prepare($sql);
   
  $stmt->bindParam(':email', $email);
@@ -34,8 +34,11 @@
  
  if (count($users) <= 0)
  {
-     echo "Email ou senha incorretos";
+    /*echo "<script type='javascript'> alert('Email ou senha inválido!');";*/
+    echo "<script>javascript:window.location='../index.php';</script>";
+     
      exit;
+    
  }
   
 
@@ -44,8 +47,8 @@
  session_start();
  $_SESSION['logged_in'] = true;
  $_SESSION['user_id'] = $user['id'];
- $_SESSION['user_name'] = $user['name'];
+ $_SESSION['user_name'] = $user['nome'];
   
- header('Location: home.php');
+ header('Location: ../home.php');
  ?>
  
