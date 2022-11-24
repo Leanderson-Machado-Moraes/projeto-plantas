@@ -19,7 +19,9 @@
     <img  class="logo" src="../img/logo2.png" alt="logo">
     </div>
        <h4>Aqui você encontrará tudo sobre plantas</h4>
+       
 </div>
+<form action="login.php" method="post">
         <div class="email">
             
             <input class="inputI" type = "text"  name="email" id="emaillogin" placeholder="E-mail">
@@ -30,8 +32,10 @@
         <div class="entrar">
             <input class ="btnentrar" type="submit" value="Entrar" onclick="logar()">
         </div>
+        </form>
         <h3>Não possui cadastro? <a href="cadastro.html">Clique aqui!</a></h3>
     </div>
+
 </div>
    
    
