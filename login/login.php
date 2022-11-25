@@ -35,7 +35,7 @@
  if (count($users) <= 0)
  {
     /*echo "<script type='javascript'> alert('Email ou senha inválido!');";*/
-    echo "<script>javascript:window.location='../index.php';</script>";
+    echo "<script>javascript:window.location='../for-login.php';</script>";
      
      exit;
     

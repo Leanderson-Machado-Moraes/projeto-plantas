@@ -6,5 +6,5 @@ $_SESSION['logged_in'] = false;
  
 session_destroy();
  
-header('Location: home.php');
+header('Location: for-login.php');
 ?>

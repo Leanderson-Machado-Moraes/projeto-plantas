@@ -19,7 +19,7 @@ color: black;
 }
 h1{
 color: white;
-margin-top: 50px;
+margin-top: 30px;
 font-size: 40px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -29,8 +29,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
 }
 .plantinhas{
-    margin-top: -80px;
-    margin-left: 1100px;
+    margin-top: -140px;
+    margin-left: 850px;
 
 }
-
+#dataNasc{
+    width: 270px;
+}

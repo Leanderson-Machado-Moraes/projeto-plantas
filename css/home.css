@@ -15,6 +15,7 @@ body {
   }
   
   .carousel {
+    margin-top: 80px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -78,4 +79,13 @@ body {
       transform: rotateY(-360deg);
     }
   }
-  
+  a{
+    border: 2px solid black;
+    padding: 10px; 
+    font-size: 20px;
+    width: 100px;
+    background-color: rgb(71, 145, 28);
+    color: white;
+
+  }
+ 

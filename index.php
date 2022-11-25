@@ -1,43 +1,21 @@
+
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/principalstyle.css">
+    <title>Dandellion</title>
 </head>
 <body>
-
-<div class="container"">
-    <div class="header">
-        <div class="titulo">
     <h1>Dandellion</h1>
-    </div>
-
+    <h3>Seja bem-vindo, aqui você encontrará plantinhas e seus nomes cientificos</h3>
     <div class="borderlogo">
     <img  class="logo" src="./img/logo2.png" alt="logo">
     </div>
-       <h4>Aqui você encontrará tudo sobre plantas</h4>
-       
-</div>
-<form action="./login/login.php" method="post">
-        <div class="email">
-            
-            <input class="inputI" type = "email"  name="email" id="emaillogin" placeholder="E-mail">
-        </div>
-        <div class="password">
-            <input class="inputI" type="password" name="password" id="passwordlogin" placeholder="Senha">
-        </div>
-        <div class="entrar">
-            <input class ="btnentrar" type="submit" value="Entrar" onclick="logar()">
-        </div>
-        </form>
-        <h3>Não possui cadastro? <a href="./cadastro.php">Clique aqui!</a></h3>
-    </div>
-
-</div>
-   
-   
+    <img src="./img/iconp.png" class="icon" alt="">
+    <h4>Clique para fazer login e acessar todo o conteúdo. <a href="./for-login.php">Clique aqui!</a></h4>
 </body>
 </html>
