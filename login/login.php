@@ -49,6 +49,10 @@
  $_SESSION['user_id'] = $user['id'];
  $_SESSION['user_name'] = $user['nome'];
   
+ if($email == "adm@adm.com"){
+    header('Location: ../adm.php');
+ }else{ 
  header('Location: ../home.php');
+ }
  ?>
  

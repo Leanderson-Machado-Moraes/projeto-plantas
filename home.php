@@ -21,6 +21,8 @@
     <div class="carousel__face"><span>Nome: Lótus <br> <br>Nome científico: Nelumbo nucifera</span></div>
   </div>
 </div>
-<a href=logout.php">Sair</a>
+<div class="logout">
+<a href=./login/logout.php>Sair</a>
+</div>
 </body>
 </html>
